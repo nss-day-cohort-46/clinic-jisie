@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Clinic Tests",
+      "setup": "npm install",
+      "run": "npm run testonce",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
