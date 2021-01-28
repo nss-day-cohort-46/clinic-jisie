@@ -12,4 +12,6 @@ export const diagnose = (personObject, symptomDaysNumber) => {
   } else {
     personObject.infected =  false
   }
+  diagnosedPatients.push(personObject)
+  return personObject
 }

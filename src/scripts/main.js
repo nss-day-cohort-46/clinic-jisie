@@ -1,5 +1,6 @@
 // Imports go first
 import { diagnose } from "./Clinic.js";
+import { PatientList } from "./PatientList.js";
 import { testPerson } from "./TestFacility.js"
 
 // Create and test 5 people at the testing facility
@@ -11,7 +12,14 @@ let martin = testPerson("Martin", 29, 103);
 // console.log(doug)
 
 // Diagnose each person at the clinic
-doug = diagnose(doug,3)
-console.log(doug)
+diagnose(doug, 3)
+// console.log(doug)
+diagnose(bob, 4)
+diagnose(lisa, 5)
+diagnose(sally, 6)
+diagnose(martin, 7)
+
 
 // Invoke the component function that returns the HTML string of patients and add it to the DOM
+const HtmlAllPatients = PatientList()
+document.querySelector(".patients").innerHTML = HtmlAllPatients
